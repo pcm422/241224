@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>선택자 기본편</title>        
+        <style>            
+            * {
+                color: red;
+            }
+            /* 
+                선택자 우선순위: 쓰여진 순서랑 관계없이 적용되는 순위
+                1. 아이디 선택자
+                2. 클래스 선택자
+                3. 태그 선택자
+            */
+            
+            #belly {
+                color: orange; /* 아이디 선택자 : 앞에 #을 붙힘 */
+            }
+            #poppin {
+                color: green; /* 아이디 선택자 : 앞에 #을 붙힘 */
+            }          
+            li.hiphap {
+                color: purple; /* 클래스 선택자 : 앞에 .을 붙힘 */
+            }
+            li {
+                color: blue;
+            }
+            h2, p, li {
+                color: yellow; /* 그룹 선택자 */
+            }
+        </style>
+    </head>
+    <body>
+        <h2>춤의 장르</h2>
+        <p>무척 다양한 장르가 존재합니다</p>
+        <ul>
+            <li class="hiphap">비보잉</li>
+            <li class="hiphap" id="poppin">팝핀</li>
+            <li class="hiphap">릭킹</li>
+            <li id="belly">벨리</li>
+            <li id="zazz">재즈</li>
+        </ul>
+    </body>
+</html>
