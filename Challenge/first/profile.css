@@ -1,0 +1,44 @@
+* {
+    text-align: center;
+}
+
+html {
+    background-color: #888888;
+    font-size: 16px;
+    font-family: "Nanum Gothic", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    background-color: #ffffff;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000000;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+#introduce {
+    font-size: 1.5rem;
+    color:blue;
+}
+
+#funfacts {
+    font-size: 1.5rem;
+    color:brown;
+}
