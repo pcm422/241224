@@ -1,0 +1,124 @@
+/* 전체적인 세팅부터 */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* 기본 폰트 설정 */
+}
+
+.container {
+    height: 100%;
+    background-color: #87CEFA; /* 하늘색 배경 */
+}
+
+/* 스크린 크기 조정 */
+.chat-screen {
+    height: calc(100% - 120px);
+}
+
+/* 유저 정보 표시되는 부분 */
+.user {
+    background-color: white;
+    padding: 16px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.user_column {
+    display: flex;
+    align-items: center;
+}
+
+.user_pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #CCC;
+    margin-right: 10px;
+}
+
+.user_nick {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.user_count {
+    font-size: 12px;
+    color: gray;
+    margin-left: 5px;
+}
+
+/* 채팅 입력 창 */
+.chat-form {
+    height: 120px;
+    background-color: white;
+    border-top: 1px solid #ddd;
+}
+
+.chat-form_field {
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.chat-form_img {
+    width: 50px;
+    height: 40px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.chat-form_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.chat-form_msg {
+    flex: 1;
+    height: 80px;
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    padding: 10px;
+    resize: none;
+    font-size: 16px;
+}
+
+.chat-form_bt {
+    width: 80px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: #00C300;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.chat-form_bt:hover {
+    background-color: #009900;
+}
+
+.chat-form_bt:active {
+    background-color: #007700;
+}
+
+.chat-form_msg:focus {
+    outline: none;
+}
