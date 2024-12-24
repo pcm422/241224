@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>선택자 더 알아보기</title>
+        <style>
+            /*
+                기호와 함께 사용하는 속성 선택자
+                * : 값의 포함 여부
+                ^ : 값의 시작 여부
+                $ : 값의 끝 여부
+                > : 자식 요소
+                + : 인접 형제 요소
+                ~ : 모든 형제 요소
+            */
+            [width *= "0"] {
+                border: 5px dashed red;
+            }
+
+            p > em { /* p 태그의 자식인 em 태그 */
+                color: blue;
+            }
+
+            #sam ~ p {
+                color: orange;
+            }
+            
+            #sam ~ img { /* 뒤이어 등장하는 형제들을 대상으로 한다. img태그는 sam 앞에 등장하기 때문에 적용되지 않음. */
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="images/daejeon.jpg" width="120" alt="대전">
+        <img src="images/daejeon.jpg" width="120">
+        <img src="images/daejeon.jpg" width="120" id="sam">
+        <p>대전은 유노코딩의 고향이자, 현 거주지이기도 합니다.</p>
+        <p>대전광역시 유성구에는 대전의 랜드마크 한빛탑이 있습니다.</p>
+        <p>한빛탑 맞은 편에는 <em>엑스포다리</em>가 놓여 있습니다.</p>
+        <p>엑스포다리 아래에는 대전 3대하천 중 하나인 갑천이 흐릅니다.</p>
+    </body>
+</html>
